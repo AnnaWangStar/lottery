@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.wx.lottery.dao.DoubleBallMapper">
+
+    <insert id="insertBall" parameterType="com.wx.lottery.bean.DoubleBall">
+        insert into double_ball (code,red1,red2,red3,red4,red5,red6,blue,date)
+        values(#{code},#{red1},#{red2},#{red3},#{red4},#{red5},#{red6},#{blue},#{date})
+    </insert>
+
+</mapper>
